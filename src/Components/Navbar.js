@@ -14,7 +14,7 @@ function NavBar(){
             </button>
             <h3 className="logo">Logo</h3>
             <nav ref ={navRef}>
-                <a href="/#">Home</a>
+                <a href ="/#">Home</a>
                 <a href="/#">Our Menu</a>
                 <a href="/#">Book A Table</a>
 
@@ -23,7 +23,7 @@ function NavBar(){
                     <FaTimes/>
             </button>
             </nav>
-            
+
         </header>
     )
 }
