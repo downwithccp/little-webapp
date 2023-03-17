@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Markazi Text", sans-serif;
+
+    background-color: white;
+}
+
+:root {
+    --mainColor: #495e57;
+    --mainColorLight: #f4ce14;
+    --secondaryColor: #EE9972;
+    --secondaryColorLight: #fbdabb;
+    --highlightColor:   #333333;
+    --highlightColorLight:   #EDEFEE;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0, 2rem;
+    color: var(--highlightColor);
+}
+
+
+nav a {
+    margin: 0 2rem;
+    color: var(--highlightColor);
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color:var(--mainColor);
+    outline: 2px solid black;
+
+}
+
+header .nav-btn  {
+    padding: 5px;
+    cursor: pointer;
+    background:transparent;
+    border: none;
+    outline: none;
+    color:var(--highlightColor);
+    opacity: 0;
+    visibility: hidden;
+    font-size: 1.8rem;
+}
+
+header .nav-close-btn  {
+    padding: 5px;
+    cursor: pointer;
+    background:transparent;
+    border: none;
+    outline: none;
+    color:var(--highlightColor);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+
+   
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+        background-color: var(--highlightColorLight);
+
+        }
+
+        header .nav-btn {
+            visibility: visible;
+            opacity: 1;
+
+        }
+        header .responsive_nav {
+        transform: none;
+    }
+
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        left: 2rem
+
+    }
+    nav a {
+        font: 1.5rem;
+    }
+    }
+
+
+main {
+    align-items: center;
+
+}
