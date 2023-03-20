@@ -10,6 +10,13 @@
     background-color: white;
 }
 
+p { 
+    margin: 2rem 2rem;
+    padding: 2rem 2rem;
+    text-align: left;
+
+}
+
 :root {
     --mainColor: #495e57;
     --mainColorLight: #f4ce14;
@@ -30,6 +37,7 @@ header {
 }
 
 
+
 nav a {
     margin: 0 2rem;
     color: var(--highlightColor);
@@ -39,6 +47,13 @@ nav a {
 
 nav a:hover {
     color:var(--mainColor);
+    outline: 2px solid black;
+
+}
+
+nav a.active {
+    background-color:var(--mainColorLight);
+    padding: 5px;
     outline: 2px solid black;
 
 }
@@ -66,6 +81,8 @@ header .nav-close-btn  {
     visibility: hidden;
 }
 
+
+
 @media only screen and (max-width: 1024px) {
 
 
@@ -86,6 +103,7 @@ header .nav-close-btn  {
         font-size: x-large;
 
         }
+
 
         header .nav-btn {
             visibility: visible;
@@ -112,10 +130,13 @@ header .logo {
     text-align: center;
 }
 
-main {
+main{
     text-align: center;
     display: inline;
+
     }
+
+
 footer {
     text-align: center;
     display: inline;

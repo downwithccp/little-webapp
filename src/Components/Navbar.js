@@ -1,9 +1,10 @@
 import {useRef} from "react";
+import {NavLink} from "react-router-dom";
 import {FaBars, FaTimes} from "react-icons/fa";
+import logo from "./assets/Asset 16@4x.png";
 
 function NavBar(){
     const navRef = useRef();
-
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
     }
@@ -12,13 +13,12 @@ function NavBar(){
         <button className="nav-btn" onClick={showNavbar}>
                 <FaBars/>
             </button>
-            <h3 className="logo">Logo</h3>
+            <img src={logo} width = "200" height = "56" className= "App-logo" alt="logo"></img>
             <nav ref ={navRef}>
-                <a href ="/#">Home</a>
-                <a href="/#">Our Menu</a>
-                <a href="/#">Book A Table</a>
-
-                <a href="/#">About Us</a>
+                <NavLink to ="Home"> Home </NavLink>
+                <NavLink to ="Menu"> Menu </NavLink>
+                <NavLink to ="About"> About </NavLink>
+                <NavLink to ="Book"> Book A Table </NavLink>
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
             </button>
