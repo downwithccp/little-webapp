@@ -19,6 +19,7 @@ function NavBar(){
                 <NavLink to ="Menu"> Menu </NavLink>
                 <NavLink to ="About"> About </NavLink>
                 <NavLink to ="Book"> Book A Table </NavLink>
+
             <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes/>
             </button>

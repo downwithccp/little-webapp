@@ -1,0 +1,15 @@
+.container{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    justify-content: center;
+    margin-bottom:20px;
+    margin-top: 10rem;
+    display: flex;
+
+    }
+    .ft-logo {
+        display: block;
+        justify-content: right;
+
+    }

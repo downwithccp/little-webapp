@@ -6,11 +6,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Markazi Text", sans-serif;
-
     background-color: white;
 }
 
-p { 
+p {
     margin: 2rem 2rem;
     padding: 2rem 2rem;
     text-align: left;
@@ -126,8 +125,9 @@ header .nav-close-btn  {
     }
     }
 
-header .logo {
-    text-align: center;
+header .App-logo {
+    margin-right: 6rem;
+
 }
 
 main{
